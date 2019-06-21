@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="headcell" rowHeight="80" id="KGk-i7-Jjw" customClass="headcell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dzw-jq-fpK">
+                        <rect key="frame" x="22" y="12" width="56" height="56"/>
+                        <color key="backgroundColor" red="0.21176470589999999" green="0.87843137250000003" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="56" id="AFg-Gp-3SW"/>
+                            <constraint firstAttribute="width" constant="56" id="Aeq-TK-Vv9"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mHr-kC-rBf">
+                        <rect key="frame" x="93" y="16" width="96" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="96" id="q96-BK-vS8"/>
+                            <constraint firstAttribute="height" constant="16" id="tyn-bS-EGy"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="姓名：王大胖">
+                                <attributes>
+                                    <color key="NSColor" red="0.20000000000000001" green="0.24313725490196078" blue="0.2627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="16" name="PingFangSC-Medium"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lio-ez-U4m">
+                        <rect key="frame" x="93" y="42" width="124" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="O3A-XX-AmI"/>
+                            <constraint firstAttribute="width" constant="124" id="pCu-Ld-SGd"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="电话：1388888888">
+                                <attributes>
+                                    <font key="NSFont" size="14" name="PingFangSC-Regular"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <color key="highlightedColor" red="0.40000000000000002" green="0.42352941176470588" blue="0.43529411764705883" alpha="1" colorSpace="calibratedRGB"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_next" translatesAutoresizingMaskIntoConstraints="NO" id="4HY-UO-VfS">
+                        <rect key="frame" x="347" y="31" width="8" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="dGZ-A9-84C"/>
+                            <constraint firstAttribute="width" constant="8" id="uGZ-7m-51K"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="4HY-UO-VfS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="31" id="Lb2-vL-Fqf"/>
+                    <constraint firstItem="mHr-kC-rBf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="N9p-43-gQf"/>
+                    <constraint firstItem="mHr-kC-rBf" firstAttribute="leading" secondItem="Dzw-jq-fpK" secondAttribute="trailing" constant="15" id="Uep-Cf-6nK"/>
+                    <constraint firstItem="lio-ez-U4m" firstAttribute="top" secondItem="mHr-kC-rBf" secondAttribute="bottom" constant="10" id="dWk-fG-jab"/>
+                    <constraint firstItem="lio-ez-U4m" firstAttribute="leading" secondItem="Dzw-jq-fpK" secondAttribute="trailing" constant="15" id="hIg-W6-NlK"/>
+                    <constraint firstAttribute="trailing" secondItem="4HY-UO-VfS" secondAttribute="trailing" constant="20" id="rc7-WY-Vsy"/>
+                    <constraint firstItem="Dzw-jq-fpK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="22" id="xtU-eZ-GIz"/>
+                    <constraint firstItem="Dzw-jq-fpK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="xxt-f0-eVq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="headview" destination="Dzw-jq-fpK" id="vdw-53-CoO"/>
+                <outlet property="nameLabel" destination="mHr-kC-rBf" id="nY8-Ud-Rvx"/>
+                <outlet property="phoneLabel" destination="lio-ez-U4m" id="gfP-5f-Mqb"/>
+            </connections>
+            <point key="canvasLocation" x="99.275362318840592" y="158.03571428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_next" width="8" height="15"/>
+    </resources>
+</document>

@@ -1,0 +1,659 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		28F553904CE0C805C37012EC /* libPods-fastTable.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DC4CAFCDDEB409F71554A40 /* libPods-fastTable.a */; };
+		701736EF22BCDCFB00CFE543 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 701736EE22BCDCFB00CFE543 /* AppDelegate.m */; };
+		701736F222BCDCFB00CFE543 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 701736F122BCDCFB00CFE543 /* ViewController.m */; };
+		701736F522BCDCFB00CFE543 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 701736F322BCDCFB00CFE543 /* Main.storyboard */; };
+		701736F722BCDCFD00CFE543 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 701736F622BCDCFD00CFE543 /* Assets.xcassets */; };
+		701736FA22BCDCFD00CFE543 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 701736F822BCDCFD00CFE543 /* LaunchScreen.storyboard */; };
+		701736FD22BCDCFD00CFE543 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 701736FC22BCDCFD00CFE543 /* main.m */; };
+		7017370722BCDCFD00CFE543 /* fastTableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7017370622BCDCFD00CFE543 /* fastTableTests.m */; };
+		7017371222BCDCFD00CFE543 /* fastTableUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7017371122BCDCFD00CFE543 /* fastTableUITests.m */; };
+		7017372422BCDF3A00CFE543 /* UIColor+JKColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7017372322BCDF3A00CFE543 /* UIColor+JKColor.m */; };
+		7017372922BCE08100CFE543 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7017372722BCE08100CFE543 /* UIView+Extension.m */; };
+		7017372F22BCE1FD00CFE543 /* headcell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7017372C22BCE1FD00CFE543 /* headcell.xib */; };
+		7017373022BCE1FD00CFE543 /* headcell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7017372E22BCE1FD00CFE543 /* headcell.m */; };
+		7017373322BCE2B100CFE543 /* ZxTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7017373122BCE2B000CFE543 /* ZxTool.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7017370322BCDCFD00CFE543 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 701736E222BCDCFB00CFE543 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 701736E922BCDCFB00CFE543;
+			remoteInfo = fastTable;
+		};
+		7017370E22BCDCFD00CFE543 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 701736E222BCDCFB00CFE543 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 701736E922BCDCFB00CFE543;
+			remoteInfo = fastTable;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2DC4CAFCDDEB409F71554A40 /* libPods-fastTable.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-fastTable.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		310AB67E40FDB3503AC00413 /* Pods-fastTable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fastTable.release.xcconfig"; path = "Target Support Files/Pods-fastTable/Pods-fastTable.release.xcconfig"; sourceTree = "<group>"; };
+		701736EA22BCDCFB00CFE543 /* fastTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fastTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		701736ED22BCDCFB00CFE543 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		701736EE22BCDCFB00CFE543 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		701736F022BCDCFB00CFE543 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		701736F122BCDCFB00CFE543 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		701736F422BCDCFB00CFE543 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		701736F622BCDCFD00CFE543 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		701736F922BCDCFD00CFE543 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		701736FB22BCDCFD00CFE543 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		701736FC22BCDCFD00CFE543 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7017370222BCDCFD00CFE543 /* fastTableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fastTableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7017370622BCDCFD00CFE543 /* fastTableTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fastTableTests.m; sourceTree = "<group>"; };
+		7017370822BCDCFD00CFE543 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7017370D22BCDCFD00CFE543 /* fastTableUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fastTableUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7017371122BCDCFD00CFE543 /* fastTableUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fastTableUITests.m; sourceTree = "<group>"; };
+		7017371322BCDCFD00CFE543 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7017372222BCDF3A00CFE543 /* UIColor+JKColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+JKColor.h"; sourceTree = "<group>"; };
+		7017372322BCDF3A00CFE543 /* UIColor+JKColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+JKColor.m"; sourceTree = "<group>"; };
+		7017372522BCE08100CFE543 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		7017372722BCE08100CFE543 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		7017372C22BCE1FD00CFE543 /* headcell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = headcell.xib; sourceTree = "<group>"; };
+		7017372D22BCE1FD00CFE543 /* headcell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = headcell.h; sourceTree = "<group>"; };
+		7017372E22BCE1FD00CFE543 /* headcell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = headcell.m; sourceTree = "<group>"; };
+		7017373122BCE2B000CFE543 /* ZxTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZxTool.m; sourceTree = "<group>"; };
+		7017373222BCE2B100CFE543 /* ZxTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZxTool.h; sourceTree = "<group>"; };
+		9164AE26FF505FEAEB11F2B9 /* Pods-fastTable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fastTable.debug.xcconfig"; path = "Target Support Files/Pods-fastTable/Pods-fastTable.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		701736E722BCDCFB00CFE543 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28F553904CE0C805C37012EC /* libPods-fastTable.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		701736FF22BCDCFD00CFE543 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7017370A22BCDCFD00CFE543 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		281A94B38E8994A7E63D9954 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2DC4CAFCDDEB409F71554A40 /* libPods-fastTable.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		701736E122BCDCFB00CFE543 = {
+			isa = PBXGroup;
+			children = (
+				701736EC22BCDCFB00CFE543 /* fastTable */,
+				7017370522BCDCFD00CFE543 /* fastTableTests */,
+				7017371022BCDCFD00CFE543 /* fastTableUITests */,
+				701736EB22BCDCFB00CFE543 /* Products */,
+				7F720CC108D62E14545AF724 /* Pods */,
+				281A94B38E8994A7E63D9954 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		701736EB22BCDCFB00CFE543 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				701736EA22BCDCFB00CFE543 /* fastTable.app */,
+				7017370222BCDCFD00CFE543 /* fastTableTests.xctest */,
+				7017370D22BCDCFD00CFE543 /* fastTableUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		701736EC22BCDCFB00CFE543 /* fastTable */ = {
+			isa = PBXGroup;
+			children = (
+				7017372222BCDF3A00CFE543 /* UIColor+JKColor.h */,
+				7017372322BCDF3A00CFE543 /* UIColor+JKColor.m */,
+				7017372522BCE08100CFE543 /* UIView+Extension.h */,
+				7017372722BCE08100CFE543 /* UIView+Extension.m */,
+				7017373222BCE2B100CFE543 /* ZxTool.h */,
+				7017373122BCE2B000CFE543 /* ZxTool.m */,
+				701736ED22BCDCFB00CFE543 /* AppDelegate.h */,
+				701736EE22BCDCFB00CFE543 /* AppDelegate.m */,
+				701736F022BCDCFB00CFE543 /* ViewController.h */,
+				701736F122BCDCFB00CFE543 /* ViewController.m */,
+				7017372D22BCE1FD00CFE543 /* headcell.h */,
+				7017372E22BCE1FD00CFE543 /* headcell.m */,
+				7017372C22BCE1FD00CFE543 /* headcell.xib */,
+				701736F322BCDCFB00CFE543 /* Main.storyboard */,
+				701736F622BCDCFD00CFE543 /* Assets.xcassets */,
+				701736F822BCDCFD00CFE543 /* LaunchScreen.storyboard */,
+				701736FB22BCDCFD00CFE543 /* Info.plist */,
+				701736FC22BCDCFD00CFE543 /* main.m */,
+			);
+			path = fastTable;
+			sourceTree = "<group>";
+		};
+		7017370522BCDCFD00CFE543 /* fastTableTests */ = {
+			isa = PBXGroup;
+			children = (
+				7017370622BCDCFD00CFE543 /* fastTableTests.m */,
+				7017370822BCDCFD00CFE543 /* Info.plist */,
+			);
+			path = fastTableTests;
+			sourceTree = "<group>";
+		};
+		7017371022BCDCFD00CFE543 /* fastTableUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7017371122BCDCFD00CFE543 /* fastTableUITests.m */,
+				7017371322BCDCFD00CFE543 /* Info.plist */,
+			);
+			path = fastTableUITests;
+			sourceTree = "<group>";
+		};
+		7F720CC108D62E14545AF724 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9164AE26FF505FEAEB11F2B9 /* Pods-fastTable.debug.xcconfig */,
+				310AB67E40FDB3503AC00413 /* Pods-fastTable.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		701736E922BCDCFB00CFE543 /* fastTable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7017371622BCDCFD00CFE543 /* Build configuration list for PBXNativeTarget "fastTable" */;
+			buildPhases = (
+				CE626AE2BDCC6E228F85D923 /* [CP] Check Pods Manifest.lock */,
+				701736E622BCDCFB00CFE543 /* Sources */,
+				701736E722BCDCFB00CFE543 /* Frameworks */,
+				701736E822BCDCFB00CFE543 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = fastTable;
+			productName = fastTable;
+			productReference = 701736EA22BCDCFB00CFE543 /* fastTable.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7017370122BCDCFD00CFE543 /* fastTableTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7017371922BCDCFD00CFE543 /* Build configuration list for PBXNativeTarget "fastTableTests" */;
+			buildPhases = (
+				701736FE22BCDCFD00CFE543 /* Sources */,
+				701736FF22BCDCFD00CFE543 /* Frameworks */,
+				7017370022BCDCFD00CFE543 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7017370422BCDCFD00CFE543 /* PBXTargetDependency */,
+			);
+			name = fastTableTests;
+			productName = fastTableTests;
+			productReference = 7017370222BCDCFD00CFE543 /* fastTableTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7017370C22BCDCFD00CFE543 /* fastTableUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7017371C22BCDCFD00CFE543 /* Build configuration list for PBXNativeTarget "fastTableUITests" */;
+			buildPhases = (
+				7017370922BCDCFD00CFE543 /* Sources */,
+				7017370A22BCDCFD00CFE543 /* Frameworks */,
+				7017370B22BCDCFD00CFE543 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7017370F22BCDCFD00CFE543 /* PBXTargetDependency */,
+			);
+			name = fastTableUITests;
+			productName = fastTableUITests;
+			productReference = 7017370D22BCDCFD00CFE543 /* fastTableUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		701736E222BCDCFB00CFE543 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "liu zixuan";
+				TargetAttributes = {
+					701736E922BCDCFB00CFE543 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					7017370122BCDCFD00CFE543 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 701736E922BCDCFB00CFE543;
+					};
+					7017370C22BCDCFD00CFE543 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 701736E922BCDCFB00CFE543;
+					};
+				};
+			};
+			buildConfigurationList = 701736E522BCDCFB00CFE543 /* Build configuration list for PBXProject "fastTable" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 701736E122BCDCFB00CFE543;
+			productRefGroup = 701736EB22BCDCFB00CFE543 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				701736E922BCDCFB00CFE543 /* fastTable */,
+				7017370122BCDCFD00CFE543 /* fastTableTests */,
+				7017370C22BCDCFD00CFE543 /* fastTableUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		701736E822BCDCFB00CFE543 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				701736FA22BCDCFD00CFE543 /* LaunchScreen.storyboard in Resources */,
+				701736F722BCDCFD00CFE543 /* Assets.xcassets in Resources */,
+				701736F522BCDCFB00CFE543 /* Main.storyboard in Resources */,
+				7017372F22BCE1FD00CFE543 /* headcell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7017370022BCDCFD00CFE543 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7017370B22BCDCFD00CFE543 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CE626AE2BDCC6E228F85D923 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-fastTable-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		701736E622BCDCFB00CFE543 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7017372922BCE08100CFE543 /* UIView+Extension.m in Sources */,
+				7017372422BCDF3A00CFE543 /* UIColor+JKColor.m in Sources */,
+				701736F222BCDCFB00CFE543 /* ViewController.m in Sources */,
+				701736FD22BCDCFD00CFE543 /* main.m in Sources */,
+				7017373322BCE2B100CFE543 /* ZxTool.m in Sources */,
+				7017373022BCE1FD00CFE543 /* headcell.m in Sources */,
+				701736EF22BCDCFB00CFE543 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		701736FE22BCDCFD00CFE543 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7017370722BCDCFD00CFE543 /* fastTableTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7017370922BCDCFD00CFE543 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7017371222BCDCFD00CFE543 /* fastTableUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7017370422BCDCFD00CFE543 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 701736E922BCDCFB00CFE543 /* fastTable */;
+			targetProxy = 7017370322BCDCFD00CFE543 /* PBXContainerItemProxy */;
+		};
+		7017370F22BCDCFD00CFE543 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 701736E922BCDCFB00CFE543 /* fastTable */;
+			targetProxy = 7017370E22BCDCFD00CFE543 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		701736F322BCDCFB00CFE543 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				701736F422BCDCFB00CFE543 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		701736F822BCDCFD00CFE543 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				701736F922BCDCFD00CFE543 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7017371422BCDCFD00CFE543 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7017371522BCDCFD00CFE543 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7017371722BCDCFD00CFE543 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9164AE26FF505FEAEB11F2B9 /* Pods-fastTable.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = fastTable/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zixuan.fastTable;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7017371822BCDCFD00CFE543 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 310AB67E40FDB3503AC00413 /* Pods-fastTable.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = fastTable/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zixuan.fastTable;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7017371A22BCDCFD00CFE543 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = fastTableTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zixuan.fastTableTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fastTable.app/fastTable";
+			};
+			name = Debug;
+		};
+		7017371B22BCDCFD00CFE543 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = fastTableTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zixuan.fastTableTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fastTable.app/fastTable";
+			};
+			name = Release;
+		};
+		7017371D22BCDCFD00CFE543 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = fastTableUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zixuan.fastTableUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = fastTable;
+			};
+			name = Debug;
+		};
+		7017371E22BCDCFD00CFE543 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = fastTableUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zixuan.fastTableUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = fastTable;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		701736E522BCDCFB00CFE543 /* Build configuration list for PBXProject "fastTable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7017371422BCDCFD00CFE543 /* Debug */,
+				7017371522BCDCFD00CFE543 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7017371622BCDCFD00CFE543 /* Build configuration list for PBXNativeTarget "fastTable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7017371722BCDCFD00CFE543 /* Debug */,
+				7017371822BCDCFD00CFE543 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7017371922BCDCFD00CFE543 /* Build configuration list for PBXNativeTarget "fastTableTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7017371A22BCDCFD00CFE543 /* Debug */,
+				7017371B22BCDCFD00CFE543 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7017371C22BCDCFD00CFE543 /* Build configuration list for PBXNativeTarget "fastTableUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7017371D22BCDCFD00CFE543 /* Debug */,
+				7017371E22BCDCFD00CFE543 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 701736E222BCDCFB00CFE543 /* Project object */;
+}
