@@ -27,10 +27,37 @@
     self.sysTableview.delegate =self;
     
     //注册cell
-    
     [self.sysTableview registerNib:[UINib nibWithNibName:@"headcell" bundle:nil] forCellReuseIdentifier:@"headcell"];
+    [self WriteToSandbox];
 }
+-(void)WriteToSandbox{
+        UIView *v = [[UIView alloc]initWithFrame:CGRectMake(100, 100, 200, 200)];
+        v.backgroundColor = [UIColor purpleColor];
+        v.hidden = YES;
+        [self.view addSubview:v];
+    
+    //Document目录 documents (Documents)
+    NSArray *paths =
+    NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES);
+    NSString *path = [paths objectAtIndex:0];
+    NSLog(@"%@",path);
+    
+//    //Libaray目录 various documentation, support, and configuration files, resources (Library)
+//    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory,NSUserDomainMask,YES);
+//    NSString *path = [paths objectAtIndex:0];
+//
+//    //Cache目录 location of discardable cache files (Library/Caches)
+//    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory,NSUserDomainMask,YES);
+//    NSString *path = [paths objectAtIndex:0];
+    
+    //通过归档把v 转成NSData
+        NSData *viewData = [NSKeyedArchiver archivedDataWithRootObject:v];
+    
+        [viewData writeToFile:[NSString stringWithFormat:@"%@/view.arch",path] atomically:YES];
+    
 
+
+}
 - (UITableView *)sysTableview{
     if (!_sysTableview) {
         _sysTableview = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, ScreenWidth, ScreenHeight ) style:UITableViewStyleGrouped];
