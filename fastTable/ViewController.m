@@ -9,26 +9,34 @@
 #import "ViewController.h"
 #import "UIColor+JKColor.h"
 #import "headcell.h"
+#import "UIButton+LXMImagePosition.h"
 
 #define ScreenWidth             [UIScreen mainScreen].bounds.size.width
 #define ScreenHeight            [UIScreen mainScreen].bounds.size.height
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
+
 @property(strong,nonatomic)UITableView *sysTableview;
+@property(nonatomic,strong)UIButton *leftBtn;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //添加tableview
-    [self.view addSubview:self.sysTableview];
-    self.sysTableview.dataSource = self;
-    self.sysTableview.delegate =self;
     
-    //注册cell
-    [self.sysTableview registerNib:[UINib nibWithNibName:@"headcell" bundle:nil] forCellReuseIdentifier:@"headcell"];
-    [self WriteToSandbox];
+//添加tableview
+//    [self.view addSubview:self.sysTableview];
+//    self.sysTableview.dataSource = self;
+//    self.sysTableview.delegate =self;
+    //    //注册cell
+    //    [self.sysTableview registerNib:[UINib nibWithNibName:@"headcell" bundle:nil] forCellReuseIdentifier:@"headcell"];
+    
+//调整按钮布局demo
+     [self CreateButton];
+    
+//沙盒存储demo
+//    [self WriteToSandbox];
 }
 -(void)WriteToSandbox{
         UIView *v = [[UIView alloc]initWithFrame:CGRectMake(100, 100, 200, 200)];
@@ -57,6 +65,33 @@
     
 
 
+}
+-(void)CreateButton{
+    self.leftBtn=[UIButton buttonWithType:UIButtonTypeCustom];
+    self.leftBtn.backgroundColor=[UIColor whiteColor];
+    [self.leftBtn setTitle:@"连接设备" forState:UIControlStateNormal];
+    [self.leftBtn setTitle:@"断开设备" forState:UIControlStateSelected];
+    [self.leftBtn setTitleColor:[UIColor colorWithHexString:@"#33B7F5"] forState:UIControlStateNormal];
+    [_leftBtn addTarget:self action:@selector(leftAction) forControlEvents:UIControlEventTouchUpInside];
+    [self.leftBtn setImage:[UIImage imageNamed:@"icon_break"] forState:UIControlStateNormal];
+    [self.leftBtn setImage:[UIImage imageNamed:@"icon_connect"] forState:UIControlStateNormal];
+    
+    self.leftBtn.titleLabel.font=[UIFont systemFontOfSize:14];
+    self.leftBtn.frame=CGRectMake(0, 200, ScreenWidth, 75);
+    [self.view addSubview:self.leftBtn];
+    
+    [self.leftBtn setImagePosition:LXMImagePositionLeft spacing:10];
+}
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    self.leftBtn.selected = !self.leftBtn.selected;
+    if (self.leftBtn.selected) {
+        [self.leftBtn setImagePosition:LXMImagePositionRight spacing:10];
+    } else {
+         [self.leftBtn setImagePosition:LXMImagePositionLeft spacing:10];
+    }
+}
+-(void)leftAction{
+    NSLog(@"无响应事件");
 }
 - (UITableView *)sysTableview{
     if (!_sysTableview) {
