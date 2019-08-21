@@ -88,7 +88,7 @@
 }
 
 
-- (void)addShadow:(CGFloat)shadowRadius shadowColor:(UIColor *)shadowColor {
+- (void)setShadow:(CGFloat)shadowRadius shadowColor:(UIColor *)shadowColor {
     
     self.layer.shadowColor = shadowColor.CGColor;//shadowColor阴影颜色
     self.layer.shadowOffset = CGSizeMake(0, 2);//shadowOffset阴影偏移,
@@ -101,21 +101,21 @@
     self.layer.borderColor = borderColor.CGColor;
 }
 
-- (void)addCornerRadius:(CGFloat)radius {
+- (void)setCornerRadius:(CGFloat)radius {
     self.layer.cornerRadius = radius;
     self.layer.masksToBounds = YES;
 }
 
-- (void)addCornerRadius:(CGFloat)radius shadowRadius:(CGFloat)shadowRadius shadowColor:(UIColor *)shadowColor {
+- (void)setCornerRadius:(CGFloat)radius shadowRadius:(CGFloat)shadowRadius shadowColor:(UIColor *)shadowColor {
     
-    [self addCornerRadius:radius];
-    [self addShadow:shadowRadius shadowColor:shadowColor];
+    [self setCornerRadius:radius];
+    [self setShadow:shadowRadius shadowColor:shadowColor];
 }
 
-- (void)addCornerRadius:(CGFloat)radius shadowRadius:(CGFloat)shadowRadius {
+- (void)setCornerRadius:(CGFloat)radius shadowRadius:(CGFloat)shadowRadius {
     
-    [self addCornerRadius:radius];
-    [self addShadow:shadowRadius shadowColor:[UIColor colorWithHexString:@"D5D5D5"]];
+    [self setCornerRadius:radius];
+    [self setShadow:shadowRadius shadowColor:[UIColor colorWithHexString:@"D5D5D5"]];
 }
 - (CGFloat)top {
     return self.frame.origin.y;

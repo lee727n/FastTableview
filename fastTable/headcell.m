@@ -15,7 +15,7 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
-    [self.headview addCornerRadius:56/2];
+    [self.headview setCornerRadius:56/2];
     
     [self.headview setBorderWidth:1 borderColor:[UIColor greenColor]];
 

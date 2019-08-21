@@ -35,7 +35,7 @@
 @property (nonatomic) CGFloat bottom;
 
 //  给View添加底部阴影
-- (void)addShadow:(CGFloat)shadowRadius shadowColor:(UIColor *)shadowColor;
+- (void)setShadow:(CGFloat)shadowRadius shadowColor:(UIColor *)shadowColor;
 
 /**
  快速给View添加边框
@@ -45,11 +45,11 @@
 - (void)setBorderWidth:(CGFloat)width borderColor:(UIColor *)borderColor;
 
 //  给View添加圆角
-- (void)addCornerRadius:(CGFloat)radius;
+- (void)setCornerRadius:(CGFloat)radius;
 
-- (void)addCornerRadius:(CGFloat)radius shadowRadius:(CGFloat)shadowRadius shadowColor:(UIColor *)shadowColor;
+- (void)setCornerRadius:(CGFloat)radius shadowRadius:(CGFloat)shadowRadius shadowColor:(UIColor *)shadowColor;
 
-- (void)addCornerRadius:(CGFloat)radius shadowRadius:(CGFloat)shadowRadius;
+- (void)setCornerRadius:(CGFloat)radius shadowRadius:(CGFloat)shadowRadius;
 
 @end
 

@@ -22,6 +22,7 @@
 		7017372F22BCE1FD00CFE543 /* headcell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7017372C22BCE1FD00CFE543 /* headcell.xib */; };
 		7017373022BCE1FD00CFE543 /* headcell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7017372E22BCE1FD00CFE543 /* headcell.m */; };
 		7017373322BCE2B100CFE543 /* ZxTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7017373122BCE2B000CFE543 /* ZxTool.m */; };
+		701B0D3B230D455200F55886 /* NSObject+Parse.m in Sources */ = {isa = PBXBuildFile; fileRef = 701B0D3A230D455200F55886 /* NSObject+Parse.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,8 @@
 		7017372E22BCE1FD00CFE543 /* headcell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = headcell.m; sourceTree = "<group>"; };
 		7017373122BCE2B000CFE543 /* ZxTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZxTool.m; sourceTree = "<group>"; };
 		7017373222BCE2B100CFE543 /* ZxTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZxTool.h; sourceTree = "<group>"; };
+		701B0D39230D455200F55886 /* NSObject+Parse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Parse.h"; sourceTree = "<group>"; };
+		701B0D3A230D455200F55886 /* NSObject+Parse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Parse.m"; sourceTree = "<group>"; };
 		9164AE26FF505FEAEB11F2B9 /* Pods-fastTable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fastTable.debug.xcconfig"; path = "Target Support Files/Pods-fastTable/Pods-fastTable.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -145,6 +148,8 @@
 				701736EE22BCDCFB00CFE543 /* AppDelegate.m */,
 				701736F022BCDCFB00CFE543 /* ViewController.h */,
 				701736F122BCDCFB00CFE543 /* ViewController.m */,
+				701B0D39230D455200F55886 /* NSObject+Parse.h */,
+				701B0D3A230D455200F55886 /* NSObject+Parse.m */,
 				7017372D22BCE1FD00CFE543 /* headcell.h */,
 				7017372E22BCE1FD00CFE543 /* headcell.m */,
 				7017372C22BCE1FD00CFE543 /* headcell.xib */,
@@ -347,6 +352,7 @@
 				701736FD22BCDCFD00CFE543 /* main.m in Sources */,
 				700AA6D422CF4D3100544E7E /* UIButton+LXMImagePosition.m in Sources */,
 				7017373322BCE2B100CFE543 /* ZxTool.m in Sources */,
+				701B0D3B230D455200F55886 /* NSObject+Parse.m in Sources */,
 				7017373022BCE1FD00CFE543 /* headcell.m in Sources */,
 				701736EF22BCDCFB00CFE543 /* AppDelegate.m in Sources */,
 			);

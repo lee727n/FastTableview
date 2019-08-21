@@ -36,7 +36,7 @@
      [self CreateButton];
     
 //沙盒存储demo
-//    [self WriteToSandbox];
+    [self WriteToSandbox];
 }
 -(void)WriteToSandbox{
         UIView *v = [[UIView alloc]initWithFrame:CGRectMake(100, 100, 200, 200)];
