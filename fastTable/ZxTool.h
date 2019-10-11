@@ -89,11 +89,20 @@ typedef void(^ActionOne)(void);
 //显示提示框
 +(void)showAlertWithTitle:(NSString*)title Message:(NSString*)Message CancelTitle:(NSString *)cancel OkTitle:(NSString *)Ok OkAction:(ActionOne)Action;
 
+//时间处理
 + (NSString *)getCurrentTime;
 + (NSInteger)timeSwitchTimestamp:(NSString *)formatTime andFormatter:(NSString *)format;
 + (NSString *)ConvertStrToTime:(NSString *)timeStr;
 
-+(CGFloat)estimateLabelHeightwithWidth:(UILabel*)label withSpace:(CGFloat)space withFont:(UIFont*)font withWidth:(CGFloat)width;
+//估算行高
++(CGFloat)estimateLabelHeightwithWidth:(NSString *)Str withSpace:(CGFloat)space withFont:(UIFont*)font withWidth:(CGFloat)width;
+//设置行间距
 +(void)setLabelSpace:(UILabel*)label withSpace:(CGFloat)space withFont:(UIFont*)font;
+
+//字符串分段处理
++(void)setFontWithFont:(NSString *)font Size:(CGFloat) size Color6f:(NSString *) color6F withLabel:(UILabel *)label withString:(NSString*)str;
+
+//快速添加手势
++(void)addGestureToView:(UIView*) view withTarget:(UIViewController*)target WithfuncName:(NSString *) name;
 @end
 

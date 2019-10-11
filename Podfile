@@ -4,5 +4,6 @@
 target 'fastTable' do
 pod 'YYKit'
 pod 'AFNetworking'
+pod 'MJExtension'
 
 end

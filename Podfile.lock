@@ -14,23 +14,27 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - MJExtension (3.0.16)
   - YYKit (1.0.9):
     - YYKit/no-arc (= 1.0.9)
   - YYKit/no-arc (1.0.9)
 
 DEPENDENCIES:
   - AFNetworking
+  - MJExtension
   - YYKit
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
+    - MJExtension
     - YYKit
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  MJExtension: 54dbbf6ee728f1a88e9aad904353d007831c7847
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: eb874f7ffe498d67013006d1afbd3a4e28f3ca53
+PODFILE CHECKSUM: 92c7010689feecb98d6030b65c75c29898ecda29
 
 COCOAPODS: 1.6.0.beta.2

@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DA1A27A3574773F64FE7CD93EC2FF835"
-               BlueprintName = "Pods-fastTable"
+               BlueprintIdentifier = "BDE2C47E2D60AE7740EA60996745639A"
+               BlueprintName = "MJExtension"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "libPods-fastTable.a">
+               BuildableName = "libMJExtension.a">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

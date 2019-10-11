@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "NSObject+YYModel.h"
+#import <MJExtension.h>
 
 @interface NSObject (Parse)
 

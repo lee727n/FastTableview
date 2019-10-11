@@ -6,6 +6,7 @@
 //
 
 #import "ZxTool.h"
+#import "UIColor+JKColor.h"
 
 
 @implementation ZxTool
@@ -435,7 +436,7 @@
 }
 #pragma mark - label动态行高
 //计算UILabel的高度(带有行间距的情况)
-+(CGFloat)estimateLabelHeightwithWidth:(UILabel*)label withSpace:(CGFloat)space withFont:(UIFont*)font withWidth:(CGFloat)width{
++(CGFloat)estimateLabelHeightwithWidth:(NSString*)Str withSpace:(CGFloat)space withFont:(UIFont*)font withWidth:(CGFloat)width{
     
     NSMutableParagraphStyle *paraStyle = [[NSMutableParagraphStyle alloc] init];
     paraStyle.lineBreakMode = NSLineBreakByCharWrapping;
@@ -447,7 +448,7 @@
     paraStyle.headIndent = 0;
     paraStyle.tailIndent = 0;
     NSDictionary *dic = @{NSFontAttributeName:font, NSParagraphStyleAttributeName:paraStyle, NSKernAttributeName:@0.0f};
-    CGSize size = [label.text boundingRectWithSize:CGSizeMake(width, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:dic context:nil].size;
+    CGSize size = [Str boundingRectWithSize:CGSizeMake(width, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:dic context:nil].size;
     return size.height;
     
 }
@@ -469,5 +470,28 @@
     NSAttributedString *attributeStr = [[NSAttributedString alloc] initWithString:label.text attributes:dic];
     label.attributedText = attributeStr;
 }
+#pragma mark - 分段字符串
 
++(void)setFontWithFont:(NSString *)font Size:(CGFloat) size Color6f:(NSString *) color6F withLabel:(UILabel *)label withString:(NSString*)str{
+NSRange  range  = [label.text rangeOfString:str];
+NSMutableAttributedString *atrributeStr2=[[NSMutableAttributedString alloc] initWithString:label.text];
+//设置字体颜色
+[atrributeStr2 addAttribute:NSFontAttributeName
+                      value:[UIFont fontWithName:font size:size]
+                      range:range];
+    
+[atrributeStr2 addAttribute:NSForegroundColorAttributeName
+                      value:[UIColor colorWithHexString:color6F]
+                      range:range];
+    
+label.attributedText=atrributeStr2;
+}
+#pragma mark - 快速添加手势
++(void)addGestureToView:(UIView*) view withTarget:(UIViewController*)target WithfuncName:(NSString *)name {
+    SEL act = NSSelectorFromString(name);
+    UITapGestureRecognizer *singleTapGestureRecognizer = [[UITapGestureRecognizer alloc]initWithTarget:target action:act];
+    [singleTapGestureRecognizer setNumberOfTapsRequired:1];
+    [view addGestureRecognizer:singleTapGestureRecognizer];
+    
+}
 @end
