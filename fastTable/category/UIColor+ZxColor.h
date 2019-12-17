@@ -7,7 +7,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIColor (JKColor)
+@interface UIColor (ZxColor)
 
 + (UIColor *)colorWithIntRed:(uint)red green:(uint)green blue:(uint)blue alpha:(uint)alpha;
 + (UIColor *)colorWithRGB:(uint)rgb;

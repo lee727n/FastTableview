@@ -5,12 +5,12 @@
 //  Copyright © 2018 刘梓轩. All rights reserved.
 //
 
-#import "UIColor+JKColor.h"
+#import "UIColor+ZxColor.h"
 
 #define DEFAULT_VOID_COLOR ([UIColor blackColor])
 #define MyPROFILE_COLOR     [UIColor colorWithHexString:@"#37D961"]
 
-@implementation UIColor (JKColor)
+@implementation UIColor (ZxColor)
 
 + (UIColor *)colorWithIntRed:(uint)red green:(uint)green blue:(uint)blue alpha:(uint)alpha {
     return [self colorWithRed:red / 255.0f green:green / 255.0f blue:blue / 255.0f alpha:alpha / 255.0f];

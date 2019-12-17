@@ -7,7 +7,7 @@
 //
 
 #import "headcell.h"
-#import "UIColor+JKColor.h"
+#import "UIColor+ZxColor.h"
 #import "UIView+Extension.h"
 
 @implementation headcell

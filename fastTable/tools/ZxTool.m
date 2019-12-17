@@ -6,7 +6,7 @@
 //
 
 #import "ZxTool.h"
-#import "UIColor+JKColor.h"
+#import "UIColor+ZxColor.h"
 
 
 @implementation ZxTool

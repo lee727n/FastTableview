@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		28F553904CE0C805C37012EC /* libPods-fastTable.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DC4CAFCDDEB409F71554A40 /* libPods-fastTable.a */; };
 		700AA6D422CF4D3100544E7E /* UIButton+LXMImagePosition.m in Sources */ = {isa = PBXBuildFile; fileRef = 700AA6D222CF4D3100544E7E /* UIButton+LXMImagePosition.m */; };
+		700E4E5D23A8C1080011A0A4 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 700E4E5C23A8C1080011A0A4 /* ViewController.xib */; };
+		700E4E6223A8C21D0011A0A4 /* SandBoxVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 700E4E6023A8C21D0011A0A4 /* SandBoxVc.m */; };
+		700E4E6323A8C21D0011A0A4 /* SandBoxVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 700E4E6123A8C21D0011A0A4 /* SandBoxVc.xib */; };
+		700E4E6C23A8D2470011A0A4 /* ButtonPositionVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 700E4E6A23A8D2470011A0A4 /* ButtonPositionVc.m */; };
+		700E4E6D23A8D2470011A0A4 /* ButtonPositionVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 700E4E6B23A8D2470011A0A4 /* ButtonPositionVc.xib */; };
 		701736EF22BCDCFB00CFE543 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 701736EE22BCDCFB00CFE543 /* AppDelegate.m */; };
 		701736F222BCDCFB00CFE543 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 701736F122BCDCFB00CFE543 /* ViewController.m */; };
 		701736F522BCDCFB00CFE543 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 701736F322BCDCFB00CFE543 /* Main.storyboard */; };
@@ -17,7 +22,7 @@
 		701736FD22BCDCFD00CFE543 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 701736FC22BCDCFD00CFE543 /* main.m */; };
 		7017370722BCDCFD00CFE543 /* fastTableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7017370622BCDCFD00CFE543 /* fastTableTests.m */; };
 		7017371222BCDCFD00CFE543 /* fastTableUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7017371122BCDCFD00CFE543 /* fastTableUITests.m */; };
-		7017372422BCDF3A00CFE543 /* UIColor+JKColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7017372322BCDF3A00CFE543 /* UIColor+JKColor.m */; };
+		7017372422BCDF3A00CFE543 /* UIColor+ZxColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7017372322BCDF3A00CFE543 /* UIColor+ZxColor.m */; };
 		7017372922BCE08100CFE543 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7017372722BCE08100CFE543 /* UIView+Extension.m */; };
 		7017372F22BCE1FD00CFE543 /* headcell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7017372C22BCE1FD00CFE543 /* headcell.xib */; };
 		7017373022BCE1FD00CFE543 /* headcell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7017372E22BCE1FD00CFE543 /* headcell.m */; };
@@ -47,7 +52,15 @@
 		310AB67E40FDB3503AC00413 /* Pods-fastTable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fastTable.release.xcconfig"; path = "Target Support Files/Pods-fastTable/Pods-fastTable.release.xcconfig"; sourceTree = "<group>"; };
 		700AA6D222CF4D3100544E7E /* UIButton+LXMImagePosition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+LXMImagePosition.m"; sourceTree = "<group>"; };
 		700AA6D322CF4D3100544E7E /* UIButton+LXMImagePosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+LXMImagePosition.h"; sourceTree = "<group>"; };
-		701736EA22BCDCFB00CFE543 /* fastTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fastTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		700E4E5C23A8C1080011A0A4 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		700E4E5F23A8C21D0011A0A4 /* SandBoxVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SandBoxVc.h; sourceTree = "<group>"; };
+		700E4E6023A8C21D0011A0A4 /* SandBoxVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SandBoxVc.m; sourceTree = "<group>"; };
+		700E4E6123A8C21D0011A0A4 /* SandBoxVc.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SandBoxVc.xib; sourceTree = "<group>"; };
+		700E4E6923A8D2470011A0A4 /* ButtonPositionVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ButtonPositionVc.h; sourceTree = "<group>"; };
+		700E4E6A23A8D2470011A0A4 /* ButtonPositionVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ButtonPositionVc.m; sourceTree = "<group>"; };
+		700E4E6B23A8D2470011A0A4 /* ButtonPositionVc.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonPositionVc.xib; sourceTree = "<group>"; };
+		700E4E7023A8D48B0011A0A4 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		701736EA22BCDCFB00CFE543 /* ZxDemoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZxDemoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		701736ED22BCDCFB00CFE543 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		701736EE22BCDCFB00CFE543 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		701736F022BCDCFB00CFE543 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -63,8 +76,8 @@
 		7017370D22BCDCFD00CFE543 /* fastTableUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fastTableUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7017371122BCDCFD00CFE543 /* fastTableUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fastTableUITests.m; sourceTree = "<group>"; };
 		7017371322BCDCFD00CFE543 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7017372222BCDF3A00CFE543 /* UIColor+JKColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+JKColor.h"; sourceTree = "<group>"; };
-		7017372322BCDF3A00CFE543 /* UIColor+JKColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+JKColor.m"; sourceTree = "<group>"; };
+		7017372222BCDF3A00CFE543 /* UIColor+ZxColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ZxColor.h"; sourceTree = "<group>"; };
+		7017372322BCDF3A00CFE543 /* UIColor+ZxColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ZxColor.m"; sourceTree = "<group>"; };
 		7017372522BCE08100CFE543 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		7017372722BCE08100CFE543 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		7017372C22BCE1FD00CFE543 /* headcell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = headcell.xib; sourceTree = "<group>"; };
@@ -111,6 +124,43 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		700E4E5E23A8C1E60011A0A4 /* DemoList */ = {
+			isa = PBXGroup;
+			children = (
+				700E4E5F23A8C21D0011A0A4 /* SandBoxVc.h */,
+				700E4E6023A8C21D0011A0A4 /* SandBoxVc.m */,
+				700E4E6123A8C21D0011A0A4 /* SandBoxVc.xib */,
+				700E4E6923A8D2470011A0A4 /* ButtonPositionVc.h */,
+				700E4E6A23A8D2470011A0A4 /* ButtonPositionVc.m */,
+				700E4E6B23A8D2470011A0A4 /* ButtonPositionVc.xib */,
+			);
+			path = DemoList;
+			sourceTree = "<group>";
+		};
+		700E4E6E23A8D3880011A0A4 /* category */ = {
+			isa = PBXGroup;
+			children = (
+				7017372222BCDF3A00CFE543 /* UIColor+ZxColor.h */,
+				7017372322BCDF3A00CFE543 /* UIColor+ZxColor.m */,
+				7017372522BCE08100CFE543 /* UIView+Extension.h */,
+				7017372722BCE08100CFE543 /* UIView+Extension.m */,
+				700AA6D322CF4D3100544E7E /* UIButton+LXMImagePosition.h */,
+				700AA6D222CF4D3100544E7E /* UIButton+LXMImagePosition.m */,
+				701B0D39230D455200F55886 /* NSObject+Parse.h */,
+				701B0D3A230D455200F55886 /* NSObject+Parse.m */,
+			);
+			path = category;
+			sourceTree = "<group>";
+		};
+		700E4E6F23A8D3AB0011A0A4 /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				7017373222BCE2B100CFE543 /* ZxTool.h */,
+				7017373122BCE2B000CFE543 /* ZxTool.m */,
+			);
+			path = tools;
+			sourceTree = "<group>";
+		};
 		701736E122BCDCFB00CFE543 = {
 			isa = PBXGroup;
 			children = (
@@ -126,7 +176,7 @@
 		701736EB22BCDCFB00CFE543 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				701736EA22BCDCFB00CFE543 /* fastTable.app */,
+				701736EA22BCDCFB00CFE543 /* ZxDemoList.app */,
 				7017370222BCDCFD00CFE543 /* fastTableTests.xctest */,
 				7017370D22BCDCFD00CFE543 /* fastTableUITests.xctest */,
 			);
@@ -136,25 +186,20 @@
 		701736EC22BCDCFB00CFE543 /* fastTable */ = {
 			isa = PBXGroup;
 			children = (
-				7017372222BCDF3A00CFE543 /* UIColor+JKColor.h */,
-				7017372322BCDF3A00CFE543 /* UIColor+JKColor.m */,
-				7017372522BCE08100CFE543 /* UIView+Extension.h */,
-				7017372722BCE08100CFE543 /* UIView+Extension.m */,
-				7017373222BCE2B100CFE543 /* ZxTool.h */,
-				7017373122BCE2B000CFE543 /* ZxTool.m */,
-				700AA6D322CF4D3100544E7E /* UIButton+LXMImagePosition.h */,
-				700AA6D222CF4D3100544E7E /* UIButton+LXMImagePosition.m */,
+				700E4E6F23A8D3AB0011A0A4 /* tools */,
+				700E4E6E23A8D3880011A0A4 /* category */,
 				701736ED22BCDCFB00CFE543 /* AppDelegate.h */,
 				701736EE22BCDCFB00CFE543 /* AppDelegate.m */,
 				701736F022BCDCFB00CFE543 /* ViewController.h */,
 				701736F122BCDCFB00CFE543 /* ViewController.m */,
-				701B0D39230D455200F55886 /* NSObject+Parse.h */,
-				701B0D3A230D455200F55886 /* NSObject+Parse.m */,
+				700E4E5C23A8C1080011A0A4 /* ViewController.xib */,
 				7017372D22BCE1FD00CFE543 /* headcell.h */,
 				7017372E22BCE1FD00CFE543 /* headcell.m */,
 				7017372C22BCE1FD00CFE543 /* headcell.xib */,
+				700E4E5E23A8C1E60011A0A4 /* DemoList */,
 				701736F322BCDCFB00CFE543 /* Main.storyboard */,
 				701736F622BCDCFD00CFE543 /* Assets.xcassets */,
+				700E4E7023A8D48B0011A0A4 /* PrefixHeader.pch */,
 				701736F822BCDCFD00CFE543 /* LaunchScreen.storyboard */,
 				701736FB22BCDCFD00CFE543 /* Info.plist */,
 				701736FC22BCDCFD00CFE543 /* main.m */,
@@ -207,7 +252,7 @@
 			);
 			name = fastTable;
 			productName = fastTable;
-			productReference = 701736EA22BCDCFB00CFE543 /* fastTable.app */;
+			productReference = 701736EA22BCDCFB00CFE543 /* ZxDemoList.app */;
 			productType = "com.apple.product-type.application";
 		};
 		7017370122BCDCFD00CFE543 /* fastTableTests */ = {
@@ -294,6 +339,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				701736FA22BCDCFD00CFE543 /* LaunchScreen.storyboard in Resources */,
+				700E4E5D23A8C1080011A0A4 /* ViewController.xib in Resources */,
+				700E4E6323A8C21D0011A0A4 /* SandBoxVc.xib in Resources */,
+				700E4E6D23A8D2470011A0A4 /* ButtonPositionVc.xib in Resources */,
 				701736F722BCDCFD00CFE543 /* Assets.xcassets in Resources */,
 				701736F522BCDCFB00CFE543 /* Main.storyboard in Resources */,
 				7017372F22BCE1FD00CFE543 /* headcell.xib in Resources */,
@@ -346,8 +394,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				700E4E6223A8C21D0011A0A4 /* SandBoxVc.m in Sources */,
 				7017372922BCE08100CFE543 /* UIView+Extension.m in Sources */,
-				7017372422BCDF3A00CFE543 /* UIColor+JKColor.m in Sources */,
+				700E4E6C23A8D2470011A0A4 /* ButtonPositionVc.m in Sources */,
+				7017372422BCDF3A00CFE543 /* UIColor+ZxColor.m in Sources */,
 				701736F222BCDCFB00CFE543 /* ViewController.m in Sources */,
 				701736FD22BCDCFD00CFE543 /* main.m in Sources */,
 				700AA6D422CF4D3100544E7E /* UIButton+LXMImagePosition.m in Sources */,
@@ -528,13 +578,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B3VXXCCC84;
+				GCC_PREFIX_HEADER = /Users/liuzixuan/Desktop/FastTableview/fastTable/PrefixHeader.pch;
 				INFOPLIST_FILE = fastTable/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.boe.mall;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ZxDemoList;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -546,13 +597,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B3VXXCCC84;
+				GCC_PREFIX_HEADER = /Users/liuzixuan/Desktop/FastTableview/fastTable/PrefixHeader.pch;
 				INFOPLIST_FILE = fastTable/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.boe.mall;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ZxDemoList;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
