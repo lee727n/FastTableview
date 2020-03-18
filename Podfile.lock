@@ -15,6 +15,7 @@ PODS:
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
   - MJExtension (3.0.16)
+  - SVProgressHUD (2.2.5)
   - YYKit (1.0.9):
     - YYKit/no-arc (= 1.0.9)
   - YYKit/no-arc (1.0.9)
@@ -22,19 +23,22 @@ PODS:
 DEPENDENCIES:
   - AFNetworking
   - MJExtension
+  - SVProgressHUD
   - YYKit
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
     - MJExtension
+    - SVProgressHUD
     - YYKit
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   MJExtension: 54dbbf6ee728f1a88e9aad904353d007831c7847
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 92c7010689feecb98d6030b65c75c29898ecda29
+PODFILE CHECKSUM: 5c912114da6fe3a6289ddbce3f0d75799ed4f170
 
 COCOAPODS: 1.6.0.beta.2

@@ -5,5 +5,5 @@ target 'fastTable' do
 pod 'YYKit'
 pod 'AFNetworking'
 pod 'MJExtension'
-
+pod 'SVProgressHUD'
 end

@@ -12,6 +12,7 @@
 #import "UIButton+LXMImagePosition.h"
 #import "SandBoxVc.h"
 #import "ButtonPositionVc.h"
+#import "ZXWebviewVc.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -49,6 +50,12 @@
     ButtonPositionVc *vc = [ButtonPositionVc new];
     [self.navigationController pushViewController:vc animated:YES];
     vc.title = @"快速设置按钮布局";
+}
+- (IBAction)WebDemo:(id)sender {
+    ZXWebviewVc *vc= [ZXWebviewVc new];
+    vc.navtitle= @"高性能web框架";
+    vc.urlStr = @"https://blog.csdn.net/lee727n";
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (UITableView *)sysTableview{

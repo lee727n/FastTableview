@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3379606F3A6F169391A1DD4AC925512B"
-               BlueprintName = "Pods-fastTable"
+               BlueprintIdentifier = "9CD7F4EB4B552AE6204AF601EBEB9B25"
+               BlueprintName = "SVProgressHUD"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "libPods-fastTable.a">
+               BuildableName = "libSVProgressHUD.a">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

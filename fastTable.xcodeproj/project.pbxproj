@@ -14,6 +14,7 @@
 		700E4E6323A8C21D0011A0A4 /* SandBoxVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 700E4E6123A8C21D0011A0A4 /* SandBoxVc.xib */; };
 		700E4E6C23A8D2470011A0A4 /* ButtonPositionVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 700E4E6A23A8D2470011A0A4 /* ButtonPositionVc.m */; };
 		700E4E6D23A8D2470011A0A4 /* ButtonPositionVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 700E4E6B23A8D2470011A0A4 /* ButtonPositionVc.xib */; };
+		70144B7224221EC8002BDEAC /* ZXWebviewVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 70144B7024221EC8002BDEAC /* ZXWebviewVc.m */; };
 		701736EF22BCDCFB00CFE543 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 701736EE22BCDCFB00CFE543 /* AppDelegate.m */; };
 		701736F222BCDCFB00CFE543 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 701736F122BCDCFB00CFE543 /* ViewController.m */; };
 		701736F522BCDCFB00CFE543 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 701736F322BCDCFB00CFE543 /* Main.storyboard */; };
@@ -60,6 +61,8 @@
 		700E4E6A23A8D2470011A0A4 /* ButtonPositionVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ButtonPositionVc.m; sourceTree = "<group>"; };
 		700E4E6B23A8D2470011A0A4 /* ButtonPositionVc.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonPositionVc.xib; sourceTree = "<group>"; };
 		700E4E7023A8D48B0011A0A4 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		70144B7024221EC8002BDEAC /* ZXWebviewVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXWebviewVc.m; sourceTree = "<group>"; };
+		70144B7124221EC8002BDEAC /* ZXWebviewVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXWebviewVc.h; sourceTree = "<group>"; };
 		701736EA22BCDCFB00CFE543 /* ZxDemoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZxDemoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		701736ED22BCDCFB00CFE543 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		701736EE22BCDCFB00CFE543 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -157,6 +160,8 @@
 			children = (
 				7017373222BCE2B100CFE543 /* ZxTool.h */,
 				7017373122BCE2B000CFE543 /* ZxTool.m */,
+				70144B7124221EC8002BDEAC /* ZXWebviewVc.h */,
+				70144B7024221EC8002BDEAC /* ZXWebviewVc.m */,
 			);
 			path = tools;
 			sourceTree = "<group>";
@@ -245,6 +250,7 @@
 				701736E622BCDCFB00CFE543 /* Sources */,
 				701736E722BCDCFB00CFE543 /* Frameworks */,
 				701736E822BCDCFB00CFE543 /* Resources */,
+				A542F784243389163A32D2E4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -365,6 +371,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		A542F784243389163A32D2E4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-fastTable/Pods-fastTable-resources.sh",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-fastTable/Pods-fastTable-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		CE626AE2BDCC6E228F85D923 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -394,6 +422,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70144B7224221EC8002BDEAC /* ZXWebviewVc.m in Sources */,
 				700E4E6223A8C21D0011A0A4 /* SandBoxVc.m in Sources */,
 				7017372922BCE08100CFE543 /* UIView+Extension.m in Sources */,
 				700E4E6C23A8D2470011A0A4 /* ButtonPositionVc.m in Sources */,
@@ -577,14 +606,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B3VXXCCC84;
-				GCC_PREFIX_HEADER = /Users/liuzixuan/Desktop/FastTableview/fastTable/PrefixHeader.pch;
+				DEVELOPMENT_TEAM = 2ZSYAFR9W9;
+				GCC_PREFIX_HEADER = "/Users/liuzixuan/Downloads/快速工具/FastTableview/fastTable/PrefixHeader.pch";
 				INFOPLIST_FILE = fastTable/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.boe.mall;
+				PRODUCT_BUNDLE_IDENTIFIER = com.boe.telehealth;
 				PRODUCT_NAME = ZxDemoList;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -596,14 +625,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B3VXXCCC84;
-				GCC_PREFIX_HEADER = /Users/liuzixuan/Desktop/FastTableview/fastTable/PrefixHeader.pch;
+				DEVELOPMENT_TEAM = 2ZSYAFR9W9;
+				GCC_PREFIX_HEADER = "/Users/liuzixuan/Downloads/快速工具/FastTableview/fastTable/PrefixHeader.pch";
 				INFOPLIST_FILE = fastTable/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.boe.mall;
+				PRODUCT_BUNDLE_IDENTIFIER = com.boe.telehealth;
 				PRODUCT_NAME = ZxDemoList;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -19,6 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    //演示demo需要真机环境下才能正确显示哦~
 }
 - (IBAction)WriteToSandBox:(id)sender {
         UIView *v = [[UIView alloc]initWithFrame:CGRectMake(100, 100, 200, 200)];
