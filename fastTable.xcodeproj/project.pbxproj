@@ -29,6 +29,7 @@
 		7017373022BCE1FD00CFE543 /* headcell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7017372E22BCE1FD00CFE543 /* headcell.m */; };
 		7017373322BCE2B100CFE543 /* ZxTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7017373122BCE2B000CFE543 /* ZxTool.m */; };
 		701B0D3B230D455200F55886 /* NSObject+Parse.m in Sources */ = {isa = PBXBuildFile; fileRef = 701B0D3A230D455200F55886 /* NSObject+Parse.m */; };
+		7073F6E8244069C000D28076 /* FastTableviewVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 7073F6E7244069C000D28076 /* FastTableviewVc.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,8 @@
 		7017373222BCE2B100CFE543 /* ZxTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZxTool.h; sourceTree = "<group>"; };
 		701B0D39230D455200F55886 /* NSObject+Parse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Parse.h"; sourceTree = "<group>"; };
 		701B0D3A230D455200F55886 /* NSObject+Parse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Parse.m"; sourceTree = "<group>"; };
+		7073F6E6244069C000D28076 /* FastTableviewVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FastTableviewVc.h; sourceTree = "<group>"; };
+		7073F6E7244069C000D28076 /* FastTableviewVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FastTableviewVc.m; sourceTree = "<group>"; };
 		9164AE26FF505FEAEB11F2B9 /* Pods-fastTable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fastTable.debug.xcconfig"; path = "Target Support Files/Pods-fastTable/Pods-fastTable.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,6 +133,7 @@
 		700E4E5E23A8C1E60011A0A4 /* DemoList */ = {
 			isa = PBXGroup;
 			children = (
+				7073F6E924406B4C00D28076 /* FastTableView */,
 				700E4E5F23A8C21D0011A0A4 /* SandBoxVc.h */,
 				700E4E6023A8C21D0011A0A4 /* SandBoxVc.m */,
 				700E4E6123A8C21D0011A0A4 /* SandBoxVc.xib */,
@@ -198,9 +202,6 @@
 				701736F022BCDCFB00CFE543 /* ViewController.h */,
 				701736F122BCDCFB00CFE543 /* ViewController.m */,
 				700E4E5C23A8C1080011A0A4 /* ViewController.xib */,
-				7017372D22BCE1FD00CFE543 /* headcell.h */,
-				7017372E22BCE1FD00CFE543 /* headcell.m */,
-				7017372C22BCE1FD00CFE543 /* headcell.xib */,
 				700E4E5E23A8C1E60011A0A4 /* DemoList */,
 				701736F322BCDCFB00CFE543 /* Main.storyboard */,
 				701736F622BCDCFD00CFE543 /* Assets.xcassets */,
@@ -228,6 +229,18 @@
 				7017371322BCDCFD00CFE543 /* Info.plist */,
 			);
 			path = fastTableUITests;
+			sourceTree = "<group>";
+		};
+		7073F6E924406B4C00D28076 /* FastTableView */ = {
+			isa = PBXGroup;
+			children = (
+				7073F6E6244069C000D28076 /* FastTableviewVc.h */,
+				7073F6E7244069C000D28076 /* FastTableviewVc.m */,
+				7017372D22BCE1FD00CFE543 /* headcell.h */,
+				7017372E22BCE1FD00CFE543 /* headcell.m */,
+				7017372C22BCE1FD00CFE543 /* headcell.xib */,
+			);
+			path = FastTableView;
 			sourceTree = "<group>";
 		};
 		7F720CC108D62E14545AF724 /* Pods */ = {
@@ -427,6 +440,7 @@
 				7017372922BCE08100CFE543 /* UIView+Extension.m in Sources */,
 				700E4E6C23A8D2470011A0A4 /* ButtonPositionVc.m in Sources */,
 				7017372422BCDF3A00CFE543 /* UIColor+ZxColor.m in Sources */,
+				7073F6E8244069C000D28076 /* FastTableviewVc.m in Sources */,
 				701736F222BCDCFB00CFE543 /* ViewController.m in Sources */,
 				701736FD22BCDCFD00CFE543 /* main.m in Sources */,
 				700AA6D422CF4D3100544E7E /* UIButton+LXMImagePosition.m in Sources */,
